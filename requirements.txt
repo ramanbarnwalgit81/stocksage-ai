@@ -1,0 +1,5 @@
+# StockSage AI — Dependencies
+# Only required for running the API test scripts locally
+# The Dify workflow itself runs in the cloud with no local dependencies
+
+requests>=2.31.0
