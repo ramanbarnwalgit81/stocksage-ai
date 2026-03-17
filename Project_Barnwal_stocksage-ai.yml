@@ -1,0 +1,1473 @@
+app:
+  description: 'Final project '
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: Project_Barnwal_Nur_Thomas
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/openai:0.2.8@aae2be0913b8c6f0b80cff58e08d7a8b4c214569b41778413fcaea204561ff16
+    version: null
+kind: app
+version: 0.5.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_batch_limit: 10
+        image_file_size_limit: 10
+        single_chunk_attachment_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: llm
+      id: 1772261248830-source-1772261497811-target
+      source: '1772261248830'
+      sourceHandle: source
+      target: '1772261497811'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: 1772261497811-source-1772261848107-target
+      source: '1772261497811'
+      sourceHandle: source
+      target: '1772261848107'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+      id: 1772261848107-source-1772262056125-target
+      source: '1772261848107'
+      sourceHandle: source
+      target: '1772262056125'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+      id: 1772261848107-source-1772262206447-target
+      source: '1772261848107'
+      sourceHandle: source
+      target: '1772262206447'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 1772262056125-source-1772262287065-target
+      source: '1772262056125'
+      sourceHandle: source
+      target: '1772262287065'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1772262206447-source-1772262390982-target
+      source: '1772262206447'
+      sourceHandle: source
+      target: '1772262390982'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1772262056125-source-1772262506305-target
+      source: '1772262056125'
+      sourceHandle: source
+      target: '1772262506305'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1772262287065-source-1772262506305-target
+      source: '1772262287065'
+      sourceHandle: source
+      target: '1772262506305'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1772262390982-source-1772262600997-target
+      source: '1772262390982'
+      sourceHandle: source
+      target: '1772262600997'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1772262506305-source-1772262600997-target
+      source: '1772262506305'
+      sourceHandle: source
+      target: '1772262600997'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1772262600997-source-1772262716190-target
+      source: '1772262600997'
+      sourceHandle: source
+      target: '1772262716190'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 1772262716190-source-1772263025842-target
+      source: '1772262716190'
+      sourceHandle: source
+      target: '1772263025842'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: code
+      id: 1772268613770--1772268907302-target
+      source: '1772268613770'
+      sourceHandle: source
+      target: '1772268907302'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: llm
+      id: 1772268907302-source-1772262506305-target
+      source: '1772268907302'
+      sourceHandle: source
+      target: '1772262506305'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+      id: 1772261848107-source-1772268613770-target
+      source: '1772261848107'
+      sourceHandle: source
+      target: '1772268613770'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: llm
+      id: 1772268907302-source-1772262716190-target
+      source: '1772268907302'
+      sourceHandle: source
+      target: '1772262716190'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: User Input
+        type: start
+        variables:
+        - default: ''
+          hint: ''
+          label: What stock would you like to analyze?
+          max_length: 48
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: user_query
+      height: 109
+      id: '1772261248830'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params: {}
+          mode: chat
+          name: gpt-5-mini
+          provider: langgenius/openai/openai
+        prompt_template:
+        - id: 3b62e156-4aee-404c-a23d-1386f947f9c3
+          role: system
+          text: 'You are a financial data assistant. Your only job is to extract the
+
+            stock ticker symbol from user queries.
+
+             
+
+            Rules:
+
+            - Return ONLY the ticker symbol in uppercase, nothing else
+
+            - If the user says ''Apple'', return AAPL
+
+            - If the user says ''Tesla'', return TSLA
+
+            - If the user says ''Microsoft'', return MSFT
+
+            - If they give the ticker directly (e.g. NVDA), return it as-is
+
+            - If you cannot identify a stock, return: UNKNOWN
+
+            - Never add explanations, just the ticker'
+        - id: 0a106ded-00ff-4d8c-b3fe-f0fd3f9e558b
+          role: user
+          text: '{{#1772261248830.user_query#}}'
+        selected: false
+        title: Extract Ticker Symbol
+        type: llm
+        vision:
+          enabled: false
+      height: 88
+      id: '1772261497811'
+      position:
+        x: 430
+        y: 286
+      positionAbsolute:
+        x: 430
+        y: 286
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "from datetime import datetime, timedelta\n\ndef main(**kwargs):\n \
+          \   today = datetime.now()\n    month_ago = today - timedelta(days=30)\n\
+          \    week_ago = today - timedelta(days=7)\n\n    return {\n        'today':\
+          \ today.strftime('%Y-%m-%d'),\n        'week_ago': month_ago.strftime('%Y-%m-%d'),\n\
+          \        'display_date': today.strftime('%B %d, %Y'),\n        'day_of_week':\
+          \ today.strftime('%A'),\n        'market_session': 'Note: Data reflects\
+          \ latest available market data as of ' + today.strftime('%B %d, %Y %H:%M\
+          \ UTC')\n    }"
+        code_language: python3
+        outputs:
+          day_of_week:
+            children: null
+            type: string
+          display_date:
+            children: null
+            type: string
+          market_session:
+            children: null
+            type: string
+          today:
+            children: null
+            type: string
+          week_ago:
+            children: null
+            type: string
+        selected: false
+        title: Calculate Date Range
+        type: code
+        variables:
+        - value_selector: []
+          variable: arg1
+        - value_selector: []
+          variable: arg2
+      height: 52
+      id: '1772261848107'
+      position:
+        x: 739
+        y: 286
+      positionAbsolute:
+        x: 739
+        y: 286
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: null
+          default: TIME_SERIES_DAILY
+          form: llm
+          human_description:
+            en_US: Always use TIME_SERIES_DAILY
+            ja_JP: Always use TIME_SERIES_DAILY
+            pt_BR: Always use TIME_SERIES_DAILY
+            zh_Hans: Always use TIME_SERIES_DAILY
+          label:
+            en_US: function
+            ja_JP: function
+            pt_BR: function
+            zh_Hans: function
+          llm_description: Always use TIME_SERIES_DAILY
+          max: null
+          min: null
+          name: function
+          options: []
+          placeholder:
+            en_US: Always use TIME_SERIES_DAILY
+            ja_JP: Always use TIME_SERIES_DAILY
+            pt_BR: Always use TIME_SERIES_DAILY
+            zh_Hans: Always use TIME_SERIES_DAILY
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Stock ticker symbol e.g. AAPL
+            ja_JP: Stock ticker symbol e.g. AAPL
+            pt_BR: Stock ticker symbol e.g. AAPL
+            zh_Hans: Stock ticker symbol e.g. AAPL
+          label:
+            en_US: symbol
+            ja_JP: symbol
+            pt_BR: symbol
+            zh_Hans: symbol
+          llm_description: Stock ticker symbol e.g. AAPL
+          max: null
+          min: null
+          name: symbol
+          options: []
+          placeholder:
+            en_US: Stock ticker symbol e.g. AAPL
+            ja_JP: Stock ticker symbol e.g. AAPL
+            pt_BR: Stock ticker symbol e.g. AAPL
+            zh_Hans: Stock ticker symbol e.g. AAPL
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: compact
+          form: llm
+          human_description:
+            en_US: Use compact for last 100 days
+            ja_JP: Use compact for last 100 days
+            pt_BR: Use compact for last 100 days
+            zh_Hans: Use compact for last 100 days
+          label:
+            en_US: outputsize
+            ja_JP: outputsize
+            pt_BR: outputsize
+            zh_Hans: outputsize
+          llm_description: Use compact for last 100 days
+          max: null
+          min: null
+          name: outputsize
+          options: []
+          placeholder:
+            en_US: Use compact for last 100 days
+            ja_JP: Use compact for last 100 days
+            pt_BR: Use compact for last 100 days
+            zh_Hans: Use compact for last 100 days
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Your Alpha Vantage API key
+            ja_JP: Your Alpha Vantage API key
+            pt_BR: Your Alpha Vantage API key
+            zh_Hans: Your Alpha Vantage API key
+          label:
+            en_US: apikey
+            ja_JP: apikey
+            pt_BR: apikey
+            zh_Hans: apikey
+          llm_description: Your Alpha Vantage API key
+          max: null
+          min: null
+          name: apikey
+          options: []
+          placeholder:
+            en_US: Your Alpha Vantage API key
+            ja_JP: Your Alpha Vantage API key
+            pt_BR: Your Alpha Vantage API key
+            zh_Hans: Your Alpha Vantage API key
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          apikey: ''
+          function: ''
+          outputsize: ''
+          symbol: ''
+        plugin_id: null
+        plugin_unique_identifier: null
+        provider_icon:
+          background: '#FEF7C3'
+          content: 🕵️
+        provider_id: 32d60173-0473-4626-9b55-d04b92884036
+        provider_name: get_daily_prices
+        provider_type: api
+        selected: false
+        title: Fetch Price History
+        tool_configurations: {}
+        tool_description: Returns open, high, low, close, volume for last 30 days
+        tool_label: get_daily_prices
+        tool_name: get_daily_prices
+        tool_node_version: '2'
+        tool_parameters:
+          apikey:
+            type: mixed
+            value: U83ZRQTOP09NKKUM
+          function:
+            type: mixed
+            value: TIME_SERIES_DAILY
+          outputsize:
+            type: mixed
+            value: compact
+          symbol:
+            type: mixed
+            value: '{{#1772261497811.text#}}'
+        type: tool
+      height: 52
+      id: '1772262056125'
+      position:
+        x: 1047
+        y: 268
+      positionAbsolute:
+        x: 1047
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Stock ticker symbol e.g. AAPL
+            ja_JP: Stock ticker symbol e.g. AAPL
+            pt_BR: Stock ticker symbol e.g. AAPL
+            zh_Hans: Stock ticker symbol e.g. AAPL
+          label:
+            en_US: symbol
+            ja_JP: symbol
+            pt_BR: symbol
+            zh_Hans: symbol
+          llm_description: Stock ticker symbol e.g. AAPL
+          max: null
+          min: null
+          name: symbol
+          options: []
+          placeholder:
+            en_US: Stock ticker symbol e.g. AAPL
+            ja_JP: Stock ticker symbol e.g. AAPL
+            pt_BR: Stock ticker symbol e.g. AAPL
+            zh_Hans: Stock ticker symbol e.g. AAPL
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Start date in YYYY-MM-DD format
+            ja_JP: Start date in YYYY-MM-DD format
+            pt_BR: Start date in YYYY-MM-DD format
+            zh_Hans: Start date in YYYY-MM-DD format
+          label:
+            en_US: from
+            ja_JP: from
+            pt_BR: from
+            zh_Hans: from
+          llm_description: Start date in YYYY-MM-DD format
+          max: null
+          min: null
+          name: from
+          options: []
+          placeholder:
+            en_US: Start date in YYYY-MM-DD format
+            ja_JP: Start date in YYYY-MM-DD format
+            pt_BR: Start date in YYYY-MM-DD format
+            zh_Hans: Start date in YYYY-MM-DD format
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: End date in YYYY-MM-DD format
+            ja_JP: End date in YYYY-MM-DD format
+            pt_BR: End date in YYYY-MM-DD format
+            zh_Hans: End date in YYYY-MM-DD format
+          label:
+            en_US: to
+            ja_JP: to
+            pt_BR: to
+            zh_Hans: to
+          llm_description: End date in YYYY-MM-DD format
+          max: null
+          min: null
+          name: to
+          options: []
+          placeholder:
+            en_US: End date in YYYY-MM-DD format
+            ja_JP: End date in YYYY-MM-DD format
+            pt_BR: End date in YYYY-MM-DD format
+            zh_Hans: End date in YYYY-MM-DD format
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Your Finnhub API key
+            ja_JP: Your Finnhub API key
+            pt_BR: Your Finnhub API key
+            zh_Hans: Your Finnhub API key
+          label:
+            en_US: token
+            ja_JP: token
+            pt_BR: token
+            zh_Hans: token
+          llm_description: Your Finnhub API key
+          max: null
+          min: null
+          name: token
+          options: []
+          placeholder:
+            en_US: Your Finnhub API key
+            ja_JP: Your Finnhub API key
+            pt_BR: Your Finnhub API key
+            zh_Hans: Your Finnhub API key
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          from: ''
+          symbol: ''
+          to: ''
+          token: ''
+        plugin_id: null
+        plugin_unique_identifier: null
+        provider_icon:
+          background: '#FEF7C3'
+          content: 🕵️
+        provider_id: aed95491-a064-448d-a63c-9d3cb8a209f4
+        provider_name: get_company_news
+        provider_type: api
+        selected: false
+        title: Fetch News
+        tool_configurations: {}
+        tool_description: Returns headlines and summaries from last 7 days for sentiment
+          analysis
+        tool_label: get_company_news
+        tool_name: get_company_news
+        tool_node_version: '2'
+        tool_parameters:
+          from:
+            type: mixed
+            value: '{{#1772261848107.week_ago#}}'
+          symbol:
+            type: mixed
+            value: '{{#1772261497811.text#}}'
+          to:
+            type: mixed
+            value: '{{#1772261848107.today#}}'
+          token:
+            type: mixed
+            value: d6hmff1r01qr5k4chil0d6hmff1r01qr5k4chilg
+        type: tool
+      height: 52
+      id: '1772262206447'
+      position:
+        x: 1047
+        y: 385
+      positionAbsolute:
+        x: 1047
+        y: 385
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: null
+          default: RSI
+          form: llm
+          human_description:
+            en_US: Always use RSI
+            ja_JP: Always use RSI
+            pt_BR: Always use RSI
+            zh_Hans: Always use RSI
+          label:
+            en_US: function
+            ja_JP: function
+            pt_BR: function
+            zh_Hans: function
+          llm_description: Always use RSI
+          max: null
+          min: null
+          name: function
+          options: []
+          placeholder:
+            en_US: Always use RSI
+            ja_JP: Always use RSI
+            pt_BR: Always use RSI
+            zh_Hans: Always use RSI
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Stock ticker symbol e.g. AAPL
+            ja_JP: Stock ticker symbol e.g. AAPL
+            pt_BR: Stock ticker symbol e.g. AAPL
+            zh_Hans: Stock ticker symbol e.g. AAPL
+          label:
+            en_US: symbol
+            ja_JP: symbol
+            pt_BR: symbol
+            zh_Hans: symbol
+          llm_description: Stock ticker symbol e.g. AAPL
+          max: null
+          min: null
+          name: symbol
+          options: []
+          placeholder:
+            en_US: Stock ticker symbol e.g. AAPL
+            ja_JP: Stock ticker symbol e.g. AAPL
+            pt_BR: Stock ticker symbol e.g. AAPL
+            zh_Hans: Stock ticker symbol e.g. AAPL
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: daily
+          form: llm
+          human_description:
+            en_US: Time interval between data points
+            ja_JP: Time interval between data points
+            pt_BR: Time interval between data points
+            zh_Hans: Time interval between data points
+          label:
+            en_US: interval
+            ja_JP: interval
+            pt_BR: interval
+            zh_Hans: interval
+          llm_description: Time interval between data points
+          max: null
+          min: null
+          name: interval
+          options: []
+          placeholder:
+            en_US: Time interval between data points
+            ja_JP: Time interval between data points
+            pt_BR: Time interval between data points
+            zh_Hans: Time interval between data points
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: '14'
+          form: llm
+          human_description:
+            en_US: Number of data points for RSI calculation, standard is 14
+            ja_JP: Number of data points for RSI calculation, standard is 14
+            pt_BR: Number of data points for RSI calculation, standard is 14
+            zh_Hans: Number of data points for RSI calculation, standard is 14
+          label:
+            en_US: time_period
+            ja_JP: time_period
+            pt_BR: time_period
+            zh_Hans: time_period
+          llm_description: Number of data points for RSI calculation, standard is
+            14
+          max: null
+          min: null
+          name: time_period
+          options: []
+          placeholder:
+            en_US: Number of data points for RSI calculation, standard is 14
+            ja_JP: Number of data points for RSI calculation, standard is 14
+            pt_BR: Number of data points for RSI calculation, standard is 14
+            zh_Hans: Number of data points for RSI calculation, standard is 14
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: close
+          form: llm
+          human_description:
+            en_US: Price type to use for RSI calculation
+            ja_JP: Price type to use for RSI calculation
+            pt_BR: Price type to use for RSI calculation
+            zh_Hans: Price type to use for RSI calculation
+          label:
+            en_US: series_type
+            ja_JP: series_type
+            pt_BR: series_type
+            zh_Hans: series_type
+          llm_description: Price type to use for RSI calculation
+          max: null
+          min: null
+          name: series_type
+          options: []
+          placeholder:
+            en_US: Price type to use for RSI calculation
+            ja_JP: Price type to use for RSI calculation
+            pt_BR: Price type to use for RSI calculation
+            zh_Hans: Price type to use for RSI calculation
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Your Alpha Vantage API key
+            ja_JP: Your Alpha Vantage API key
+            pt_BR: Your Alpha Vantage API key
+            zh_Hans: Your Alpha Vantage API key
+          label:
+            en_US: apikey
+            ja_JP: apikey
+            pt_BR: apikey
+            zh_Hans: apikey
+          llm_description: Your Alpha Vantage API key
+          max: null
+          min: null
+          name: apikey
+          options: []
+          placeholder:
+            en_US: Your Alpha Vantage API key
+            ja_JP: Your Alpha Vantage API key
+            pt_BR: Your Alpha Vantage API key
+            zh_Hans: Your Alpha Vantage API key
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          apikey: ''
+          function: ''
+          interval: ''
+          series_type: ''
+          symbol: ''
+          time_period: ''
+        plugin_id: null
+        plugin_unique_identifier: null
+        provider_icon:
+          background: '#FEF7C3'
+          content: 🕵️
+        provider_id: e3017bd6-49aa-4185-92a5-0bfd6d7853ae
+        provider_name: get_rsi_indicator
+        provider_type: api
+        selected: false
+        title: Fetch RSI
+        tool_configurations: {}
+        tool_description: RSI above 70 means overbought, below 30 means oversold
+        tool_label: get_rsi_indicator
+        tool_name: get_rsi_indicator
+        tool_node_version: '2'
+        tool_parameters:
+          apikey:
+            type: mixed
+            value: CWUBFPS7SFUS9P8W
+          function:
+            type: mixed
+            value: RSI
+          interval:
+            type: mixed
+            value: daily
+          series_type:
+            type: mixed
+            value: close
+          symbol:
+            type: mixed
+            value: '{{#1772261497811.text#}}'
+          time_period:
+            type: mixed
+            value: '14'
+        type: tool
+      height: 52
+      id: '1772262287065'
+      position:
+        x: 1387.4472448696622
+        y: 303
+      positionAbsolute:
+        x: 1387.4472448696622
+        y: 303
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4.1-mini
+          provider: langgenius/openai/openai
+        prompt_template:
+        - id: 78aa77a8-964c-45ae-98e0-665ab2726368
+          role: system
+          text: 'You are a professional financial sentiment analyst. Analyze news
+            articles
+
+            about a stock and provide structured sentiment analysis.
+
+             
+
+            Always respond in this exact format:
+
+             
+
+            SENTIMENT: [Strongly Bullish / Bullish / Neutral / Bearish / Strongly
+            Bearish]
+
+            CONFIDENCE: [percentage 0-100%]
+
+            KEY_THEMES: [list 3 main themes from the news, comma separated]
+
+            RISKS: [list 2 key risks mentioned]
+
+            OPPORTUNITIES: [list 2 key opportunities mentioned]
+
+            TOP_HEADLINE: [the single most market-moving headline]
+
+            SUMMARY: [2-3 sentence plain English summary of what the news means for
+            this stock]'
+        - id: 0c85f97a-69e3-4121-ad25-b6a4e66d6c27
+          role: user
+          text: 'Analyze the sentiment of these recent news articles for {{1/Extract
+            Ticker/ticker}}:
+
+             {{#1772262206447.text#}}'
+        selected: false
+        title: Sentiment Analysis
+        type: llm
+        vision:
+          enabled: false
+      height: 88
+      id: '1772262390982'
+      position:
+        x: 1344
+        y: 385
+      positionAbsolute:
+        x: 1344
+        y: 385
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4.1-mini
+          provider: langgenius/openai/openai
+        prompt_template:
+        - id: f8fdfd3e-89e2-4daa-9472-db2120cc1b99
+          role: system
+          text: 'You are a technical analyst specializing in stock price patterns.
+
+            Analyze the provided price data and RSI values.
+
+             
+
+            Respond in this exact format:
+
+             
+
+            TREND: [Strong Uptrend / Uptrend / Sideways / Downtrend / Strong Downtrend]
+
+            RSI_SIGNAL: [Overbought above 70 / Neutral / Oversold below 30] with current
+            value
+
+            PRICE_CHANGE_7D: [Calculate and state % change over the week]
+
+            PRICE_CHANGE_30D: [Calculate and state % change over the month]
+
+            SUPPORT_LEVEL: [Approximate price floor based on recent lows]
+
+            RESISTANCE_LEVEL: [Approximate price ceiling based on recent highs]
+
+            MOMENTUM: [Increasing / Stable / Decreasing]
+
+            TECHNICAL_SUMMARY: [2-3 sentences about what the technical picture shows]'
+        - id: aaa98165-f070-4af9-8d1b-a2cc0cedf8f6
+          role: user
+          text: ' 
+
+            CURRENT QUOTE DATA:
+
+            {{#1772268613770.text#}}
+
+             
+
+            HISTORICAL PRICE DATA (last 30 days):
+
+            {{#1772262056125.text#}}
+
+             
+
+            RSI INDICATOR DATA:
+
+            {{#1772262287065.text#}}'
+        selected: false
+        title: Technical Analysis
+        type: llm
+        vision:
+          enabled: false
+      height: 88
+      id: '1772262506305'
+      position:
+        x: 1647.6679322640618
+        y: 243.64977148210127
+      positionAbsolute:
+        x: 1647.6679322640618
+        y: 243.64977148210127
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4.1-mini
+          provider: langgenius/openai/openai
+        prompt_template:
+        - id: 5d4cf650-9a64-4563-91e7-209aff3c196b
+          role: system
+          text: 'You are a senior equity research analyst at a top investment bank.
+
+            Based on sentiment analysis and technical indicators, provide a comprehensive
+
+            price outlook and investment thesis.
+
+             
+
+            IMPORTANT: Always include this disclaimer at the end:
+
+            ''⚠️ This analysis is AI-generated for educational purposes only.
+
+             It is NOT financial advice. Always consult a licensed financial advisor
+
+             before making investment decisions.''
+
+             
+
+            Respond in this format:
+
+             
+
+            SHORT_TERM_OUTLOOK (1-4 weeks):
+
+            - Direction: [Up / Down / Sideways]
+
+
+            - Expected Move: [percentage range, e.g. +3% to +8%]
+
+            - Key Catalyst: [main driver of expected move]
+
+             
+
+            MEDIUM_TERM_OUTLOOK (1-3 months):
+
+            - Direction: [Up / Down / Sideways]
+
+            - Target Price Range: [price range]
+
+            - Key Risks: [main risks to this outlook]
+
+             
+
+            BULL CASE: [What happens if everything goes right]
+
+            BEAR CASE: [What happens if key risks materialize]
+
+             
+
+            RECOMMENDATION: [Strong Buy / Buy / Hold / Sell / Strong Sell]
+
+            REASONING: [2-3 sentence justification for recommendation]
+
+             
+
+            [DISCLAIMER]'
+        - id: 64f63f2f-b4b2-4463-b30c-0af6b83c722e
+          role: user
+          text: 'Stock: {{#1772261497811.text#}}
+
+             
+
+            SENTIMENT ANALYSIS:
+
+            {{#1772262390982.text#}}
+
+             
+
+            TECHNICAL ANALYSIS:
+
+            {{#1772262506305.text#}}'
+        selected: false
+        title: Price Prediction
+        type: llm
+        vision:
+          enabled: false
+      height: 88
+      id: '1772262600997'
+      position:
+        x: 1951.7800560332885
+        y: 624.6734675404707
+      positionAbsolute:
+        x: 1951.7800560332885
+        y: 624.6734675404707
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4.1-mini
+          provider: langgenius/openai/openai
+        prompt_template:
+        - id: d300a7c9-bdb9-47ba-892e-f72db2e29d1f
+          role: system
+          text: 'You are a financial report writer. Combine all analysis into a single,
+
+            well-formatted markdown report that is easy to read and understand.
+
+            Use clear sections with emoji headers. Include a summary table at the
+            top.
+
+            Make it professional but accessible to non-expert investors.'
+        - id: 7db1a07d-22d8-44f6-98f8-85d5af444fdc
+          role: user
+          text: "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nINPUT DATA\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\
+            \nTICKER: {{#1772261497811.text#}}\n\nLIVE QUOTE DATA:\n{{#1772268613770.text#}}\n\
+            \nPRICE HISTORY (30 days):\n{{#1772262056125.text#}}\n\nRSI INDICATOR:\n\
+            {{#1772262287065.text#}}\n\nSENTIMENT ANALYSIS OUTPUT:\n{{#1772262390982.text#}}\n\
+            \nTECHNICAL ANALYSIS OUTPUT:\n{{#1772262506305.text#}}\n\nPRICE PREDICTION\
+            \ OUTPUT:\n{{#1772262600997.text#}}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\
+            REPORT STRUCTURE — Follow exactly\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\
+            \n# [TICKER] Equity Research Report\n**Date:** [current date] | **Coverage:**\
+            \ Intraday + 30-Day Historical | **Model:** StockSage AI\n\n---\n\n##\
+            \ Quick Stats\n\n| Metric | Value | Signal |\n|--------|-------|--------|\n\
+            | Current Price | $X.XX | — |\n| Day Change | +/-$X.XX (+/-X.XX%) | \U0001F7E2\
+            \ Positive / \U0001F534 Negative |\n| Day Range | $X.XX – $X.XX | — |\n\
+            | Previous Close | $X.XX | — |\n| RSI (14-day) | XX | Overbought >70 /\
+            \ Neutral 30–70 / Oversold <30 |\n| News Sentiment | Bullish/Neutral/Bearish\
+            \ | XX% confidence |\n| Analyst Rating | Buy / Hold / Sell | — |\n\n---\n\
+            \n## 1. Sentiment & News Analysis\n\n**Sentiment Score: [X]% [Bullish/Bearish/Neutral]**\n\
+            \nWrite 2 focused paragraphs:\n- Paragraph 1: Identify the 2–3 specific\
+            \ news themes driving current sentiment. \n  Name exact catalysts (company\
+            \ names, products, events, dates where available).\n- Paragraph 2: Identify\
+            \ macro or sector-level risks surfaced in the news. \n  Be specific —\
+            \ name the risk factors, not just \"market volatility.\"\n\n**Key Themes:**\
+            \ [Theme 1] · [Theme 2] · [Theme 3]\n\n---\n\n## 2. Technical Analysis\n\
+            \n**Trend: [Uptrend / Sideways / Downtrend] | Momentum: [Increasing /\
+            \ Stable / Decreasing]**\n\nWrite 2 focused paragraphs:\n- Paragraph 1:\
+            \ Describe price action using specific % changes (1W, 1M from history\
+            \ data). \n  Reference the actual OHLC numbers. Identify any consolidation\
+            \ patterns or breakouts.\n- Paragraph 2: Interpret RSI in context. State\
+            \ the exact RSI value, what it signals, \n  and how it aligns or conflicts\
+            \ with the price trend.\n\n**Key Levels:**\n| Level | Price | Significance\
+            \ |\n|-------|-------|-------------|\n| Strong Resistance | $X.XX | [why\
+            \ this level matters] |\n| Immediate Resistance | $X.XX | [why] |\n| Current\
+            \ Price | $X.XX | — |\n| Immediate Support | $X.XX | [why] |\n| Strong\
+            \ Support | $X.XX | [why] |\n\n---\n\n## 3. Price Outlook & Prediction\n\
+            \n**Short-Term (1–4 Weeks):** Expected move of [+/-X% to +/-X%] → Target:\
+            \ $X.XX – $X.XX\n**Medium-Term (1–3 Months):** Target range: $X.XX – $X.XX\n\
+            \n| Scenario | Probability | Price Target | Key Catalyst |\n|----------|-------------|--------------|-------------|\n\
+            | Bull Case | X% | $X.XX | [specific driver] |\n| Base Case | X% | $X.XX\
+            \ | [specific driver] |\n| Bear Case | X% | $X.XX | [specific driver]\
+            \ |\n\n---\n\n## 4. Investment Thesis\n\n**Rating: [STRONG BUY / BUY /\
+            \ HOLD / SELL / STRONG SELL]**\n\nWrite 3–4 sentences delivering a clear,\
+            \ data-backed investment conclusion. \nReference the specific price levels,\
+            \ RSI reading, sentiment score, and at least \none named catalyst. State\
+            \ the primary risk to the thesis in the final sentence. \nBe direct —\
+            \ no hedging language.\n\n**Catalysts to Watch:**\n- [Catalyst 1 — specific\
+            \ and actionable]\n- [Catalyst 2]\n- [Catalyst 3]\n\n---\n\n⚠️ **Risk\
+            \ Disclaimer:** This report is AI-generated using real-time market data\
+            \ for \neducational and informational purposes only. It does NOT constitute\
+            \ financial advice, \na solicitation, or a recommendation to buy or sell\
+            \ any security. Past performance is \nnot indicative of future results.\
+            \ Market conditions can change rapidly. Always conduct \nyour own due\
+            \ diligence and consult a licensed financial advisor before making any\
+            \ \ninvestment decisions."
+        selected: false
+        title: Generate Final Report
+        type: llm
+        vision:
+          enabled: false
+      height: 88
+      id: '1772262716190'
+      position:
+        x: 2287.0303019768753
+        y: 385
+      positionAbsolute:
+        x: 2287.0303019768753
+        y: 385
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        outputs:
+        - value_selector:
+          - '1772262716190'
+          - text
+          value_type: string
+          variable: analysis_report
+        selected: false
+        title: End
+        type: end
+      height: 88
+      id: '1772263025842'
+      position:
+        x: 2700.7432942090204
+        y: 385
+      positionAbsolute:
+        x: 2700.7432942090204
+        y: 385
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: null
+          default: GLOBAL_QUOTE
+          form: llm
+          human_description:
+            en_US: ''
+            ja_JP: ''
+            pt_BR: ''
+            zh_Hans: ''
+          label:
+            en_US: function
+            ja_JP: function
+            pt_BR: function
+            zh_Hans: function
+          llm_description: null
+          max: null
+          min: null
+          name: function
+          options: []
+          placeholder:
+            en_US: ''
+            ja_JP: ''
+            pt_BR: ''
+            zh_Hans: ''
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: ''
+            ja_JP: ''
+            pt_BR: ''
+            zh_Hans: ''
+          label:
+            en_US: symbol
+            ja_JP: symbol
+            pt_BR: symbol
+            zh_Hans: symbol
+          llm_description: null
+          max: null
+          min: null
+          name: symbol
+          options: []
+          placeholder:
+            en_US: ''
+            ja_JP: ''
+            pt_BR: ''
+            zh_Hans: ''
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: ''
+            ja_JP: ''
+            pt_BR: ''
+            zh_Hans: ''
+          label:
+            en_US: apikey
+            ja_JP: apikey
+            pt_BR: apikey
+            zh_Hans: apikey
+          llm_description: null
+          max: null
+          min: null
+          name: apikey
+          options: []
+          placeholder:
+            en_US: ''
+            ja_JP: ''
+            pt_BR: ''
+            zh_Hans: ''
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          apikey: ''
+          function: ''
+          symbol: ''
+        plugin_id: null
+        plugin_unique_identifier: null
+        provider_icon:
+          background: '#FEF7C3'
+          content: 🕵️
+        provider_id: d3247cc9-3352-41ef-b045-243172c51f13
+        provider_name: get_last_close
+        provider_type: api
+        selected: false
+        title: get_last_close
+        tool_configurations: {}
+        tool_description: Get latest closing price works on weekends
+        tool_label: get_last_close
+        tool_name: get_last_close
+        tool_node_version: '2'
+        tool_parameters:
+          apikey:
+            type: mixed
+            value: IPKLKIB2ZR7LVVB1
+          function:
+            type: mixed
+            value: GLOBAL_QUOTE
+          symbol:
+            type: mixed
+            value: '{{#1772261497811.text#}}'
+        type: tool
+      height: 52
+      id: '1772268613770'
+      position:
+        x: 1061.856049851445
+        y: 134.80595540349367
+      positionAbsolute:
+        x: 1061.856049851445
+        y: 134.80595540349367
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import json\n\ndef main(**kwargs):\n    raw = kwargs.get('raw', '{}')\n\
+          \    ticker = str(kwargs.get('ticker', 'STOCK')).strip()\n\n    try:\n \
+          \       data = json.loads(raw)\n        q = data.get('Global Quote', {})\n\
+          \n        symbol  = q.get('01. symbol', ticker)\n        open_p  = q.get('02.\
+          \ open', '0')\n        high    = q.get('03. high', '0')\n        low   \
+          \  = q.get('04. low', '0')\n        price   = q.get('05. price', '0')\n\
+          \        volume  = q.get('06. volume', '0')\n        change  = q.get('09.\
+          \ change', '0')\n        chg_pct = q.get('10. change percent', '0%')\n\n\
+          \        prev = str(round(float(price) - float(change), 2))\n        direction\
+          \ = 'UP' if float(change) >= 0 else 'DOWN'\n\n        if int(volume) > 0:\n\
+          \            vol_fmt = str(round(int(volume) / 1e6, 2)) + 'M shares'\n \
+          \       else:\n            vol_fmt = 'N/A'\n\n        result = (\n     \
+          \       'LATEST MARKET DATA FOR ' + symbol + '\\n'\n            '===================================\\\
+          n'\n            'Last Price:      $' + str(price) + '\\n'\n            'Day\
+          \ Change:      ' + str(change) + ' (' + str(chg_pct) + ')\\n'\n        \
+          \    'Direction:       ' + direction + '\\n'\n            'Day High:   \
+          \     $' + str(high) + '\\n'\n            'Day Low:         $' + str(low)\
+          \ + '\\n'\n            'Open:            $' + str(open_p) + '\\n'\n    \
+          \        'Prev Close:      $' + str(prev) + '\\n'\n            'Volume:\
+          \          ' + vol_fmt + '\\n'\n            'Day Range:       $' + str(low)\
+          \ + ' — $' + str(high) + '\\n'\n            'Note: Shows last trading session\
+          \ data (Friday close on weekends)\\n'\n        )\n        return {'parsed_quote':\
+          \ result}\n\n    except Exception as e:\n        return {\n            'parsed_quote':\
+          \ 'Parse error: ' + str(e) + '\\nRaw: ' + str(raw)[:300]\n        }"
+        code_language: python3
+        outputs:
+          parsed_quote:
+            children: null
+            type: string
+        selected: false
+        title: PARSE GLOBAL QUOTE
+        type: code
+        variables:
+        - value_selector:
+          - '1772268613770'
+          - text
+          value_type: string
+          variable: raw
+        - value_selector:
+          - '1772261497811'
+          - text
+          value_type: string
+          variable: ticker
+      height: 52
+      id: '1772268907302'
+      position:
+        x: 1374.410096294369
+        y: 111.0593509069147
+      positionAbsolute:
+        x: 1374.410096294369
+        y: 111.0593509069147
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    viewport:
+      x: -494.03896198805353
+      y: 249.16923714992322
+      zoom: 0.38771739592092486
+  rag_pipeline_variables: []
